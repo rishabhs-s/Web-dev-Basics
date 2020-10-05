@@ -1,0 +1,83 @@
+
+.pic{
+    width: 70%;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mainpic{
+    text-align: center;
+
+}
+#qoute{
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+#text{
+    text-align: center;
+    font-family: 'pacifico' ,cursive;
+    font-size: 30px;
+    padding:10px ;
+    position: relative;
+}
+.timeline{
+    line-height: 120px;
+    padding-left:130px;
+    font-size: 50px;
+    margin-left: 80px;
+    color: #ececec;
+    background: url(http://allaboutstevejobs.com/bio/bio-header.jpg) no-repeat;
+    font-weight: bold;
+    position: relative;
+}
+.class{
+    padding-left:130px;
+}
+#main-content{
+position: relative;
+ 
+}
+.event-date-first-child {
+    border-top: 1px solid #ccc;
+    margin-top: 0;
+}
+.event-date {
+    width: 100px;
+    height:7px;
+    text-align: center;
+    line-height: 26px;
+    float: left;
+    font-size: 14px;
+    border-top: 2px solid #ccc;
+    margin: -1px 0 0 0;
+    padding: 4px 5px 6px 0;
+    clear: left;
+    font-weight: bold;
+
+}
+    .event-desc {
+        width: 625px;
+        background: #f9f9f9;
+        float: left;
+        margin: 0;
+        padding: 8px 12px 8px 8px;
+        border-top: 1px solid #ccc;
+        clear: right;
+        font-size: 14px;
+    }
+    
+    .event-desc-nth-child {
+        border-bottom: 1px solid #ccc;
+    }
+     
+    #nutshell{
+        margin-right: 50px;
+        padding-left: 200px;
+    }
+    .secondpic{
+        height: 225px;
+        width: 225px;
+        padding-left: 200px;
+    }

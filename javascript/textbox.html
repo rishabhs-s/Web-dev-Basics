@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            textbox
+        </title>
+        <script>
+            function fn1()
+            {
+                var str=document.getElementById("text").value;
+                var str1=document.getElementById("pass").value;
+                if (str1==str)
+                {
+                    alert("match ");
+                }
+                else{
+                    alert("no match");
+                }        
+                
+            }
+
+        </script>
+    </head>
+    <body>
+        <input id="text"  placeholder="Input here">
+        <input type= "password" id="pass"  placeholder="Input here">
+        <button onclick="fn1()" id ="btn1">click</button>
+    </body>
+</html>

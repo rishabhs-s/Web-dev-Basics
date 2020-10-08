@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            TagName
+        </title>
+        <script>
+            function changestyle()
+            {
+                var  list = document.getElementsByTagName("p");//here x is a array
+                list[0].style.color="blue";
+                list[1].style.fontSize="35px";
+                list[2].style.fontWeight="bold"
+                
+            }
+     
+        </script>
+    </head>
+    <body>
+        <p id="qw"> paragraph 1</p>
+        <p>paragraph 2</p>
+        <p>paragraph 3</p>
+        <p>paragraph 4</p>
+        <p>paragraph 5</p>
+        <p>paragraph 6</p>
+        <button onclick="changestyle()">Click 1</button>
+        <button onclick="as()">Click 2</button>
+
+    </body>
+</html>

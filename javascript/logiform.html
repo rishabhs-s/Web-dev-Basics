@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>login</title>
+        <script>
+            function check(){
+                var username=document.getElementById('username');
+                var password=document.getElementById("pass");
+                if(username.value=="" || password.value=="")
+                {
+                    alert("null username or password");
+                    return false;
+
+                }
+                else
+                {
+                    true;
+                }
+
+            }
+
+        </script>
+    </head>
+    <body>
+        <form onsubmit="return check()" action="first.html">
+        <input type="text "id="username" placeholder=username><br>
+        <input type="password" id="pass" placeholder=password><br>
+        <button type="submit" >submit</button>
+
+
+        </form>
+        
+
+    </body>
+</html>

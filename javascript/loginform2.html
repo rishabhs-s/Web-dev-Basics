@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>
+            validation
+        </title>
+        <script>
+            function validate(){
+                var username=document.getElementById("username");
+                var password=document.getElementById("password");
+                if(username.value=="")
+                {
+                    alert("username is Empty");
+                    username.style.border="solid 3px red";
+                    document.getElementById("invalid").style.visibility="visible";
+                    return false;
+                }
+                else if(password.value==""){
+                    password.style.border="solid 3px red";
+                    alert("password is empty")
+                    return false;
+                }
+                else if(password.value.length<5)
+                {
+                    password.style.border="solid 3px red";
+                    alert("password is short")
+                    return false
+                }
+                else{
+                    return true;
+                }
+
+            }
+            
+        </script>
+    </head>
+    <body>
+        <form onsubmit="return validate();" action="first.html">
+            <input type="text" id="username" placeholder="username"> 
+            <label id="invalid" style="color:red ;visibility:hidden" >invalid</label>
+        <input type="password" id="password" placeholder="password">  
+        <button type="submit">submit</button>
+
+        </form>
+        
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>
+            mouse events
+        </title>
+        <script>
+            function setnewimg(){
+                document.getElementById("img1").src="images/img2.jpg"
+                
+            }
+            function setoldimg(){
+                document.getElementById("img1").src="images/img1.jpg";
+               
+            }
+
+
+        </script>
+    </head>
+    <body>
+        <img id="img1" onmouseover="setnewimg()" onmouseout="setoldimg()" src="images/img1.jpg">
+    </body>
+
+</html>

@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>
+            zoom IN-OUT
+        </title>
+        <script>
+            var id=0;
+            var width=100;
+           function increase(){
+              // alert("s");
+              clearInterval(id);
+               id=setInterval(zoomin,20);
+           }
+            function zoomin(){
+                if (width<500)
+                {
+                   
+                    width=width+2;
+                    document.getElementById("img").style.width=width;
+                }
+                else{
+                    clearInterval(id);
+                }
+
+
+            }
+
+            function decrease(){
+                clearInterval(id);
+                id=setInterval(zoomout,20);  
+
+            }
+            function zoomout(){
+                if(width>100)
+                {
+                   
+                    width=width-2;
+                    document.getElementById("img").style.width=width;
+                }
+                else{
+                    clearInterval(id);
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        <img onmouseover="increase();" onmouseout="decrease();"  id="img" src= "images/heart.png" alt="heart">
+    </body>
+    <style>
+        #img{
+            margin-left: 100px;
+            margin-top: 100px;
+            width: 100px;
+        }
+    </style>
+</html>

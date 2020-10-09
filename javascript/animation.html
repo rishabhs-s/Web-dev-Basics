@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+            animation
+        </title>
+        <script>
+            var opacity=0;
+            function fadeout(){
+                id=setInterval(hide,200);
+
+                function hide(){
+                    opacity=Number(window.getComputedStyle(img).getPropertyValue("opacity"));
+                    if(opacity>0)
+                    {
+                        opacity=opacity-0.1;
+                        img.style.opacity=opacity;
+                    }
+                    else{
+                        clearInterval(id);
+                    }
+                }
+                
+            }
+            function fadein(){
+                id=setInterval(show,200)
+
+                function show(){
+                    opacity=Number(window.getComputedStyle(img).getPropertyValue("opacity"));
+                    if(opacity<1)
+                    {
+                    opacity=opacity+0.1;
+                    img.style.opacity=opacity;
+                    }
+                    else{
+                        clearInterval(id);
+                    }
+                }
+
+            }
+
+        </script>
+    </head>
+    <body>
+        <button onclick="fadeout();" id="fdout">fade out</button><br><br>
+        <img id="img" src="./images/img1.jpg"><br><br>
+        <button onclick="fadein();" id="fdin">fade in</button>
+        
+        
+    </body>
+</html>

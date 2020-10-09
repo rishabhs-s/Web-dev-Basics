@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+            objects
+        </title>
+    </head>
+    <body>
+        <script>
+             var car_brand="abc";
+            var car_model="xyz";
+            var price=213132;
+            function test()
+            {
+                document.writeln (car_model);
+            }
+            test();  
+            /* //object- literal way */
+            var car={
+                car_brand:"tesla",
+                car_model:"model 3",
+                price:46768,
+                test : function()
+                {
+                    return("test function");
+                }
+            }
+                document.writeln(car.test());
+                document.write(car.car_brand);
+
+
+                //constructor object
+                function car(car_brand,car_model,price)
+                {
+                    this.car_brand=car_brand;
+                    this.car_model=car_model;
+                    this.price=price;
+                    this.test=function()
+                    {
+                       document.write("test func"); 
+                    }
+                    var c1=new car("bvcg"," modeljhg",21565);
+                    c1.test();
+                    document.write(c1.car_model);
+                }
+
+                         
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            Radio buttons
+        </title>
+        <script>
+            function fun(){
+                var rd1=document.getElementById("rd1");
+                var rd2=document.getElementById("rd2");
+                if(rd1.checked==true)
+                {
+                    alert(rd1.value);
+                }
+                else
+                alert(rd2.value);
+            }
+            alert(rd2.value);
+
+        </script>
+    </head>
+    <body>
+        <input id="rd1" name="grp1" type="radio" value="ABC">ABC </input>
+        <input id="rd2" name="grp1" type="radio" value="XYZ">XYZ</input>
+        <button onclick="fun()">Click</button>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            Dropdown 
+        </title>
+        <script>
+            function func()
+            {
+            var select=document.getElementById("box");
+            alert (select.options[select.selectedIndex].value);
+            }
+            
+
+        </script>
+    </head>
+    <body>
+        <select id="box">
+            <option value="abc">abc</option>
+            <option value="zxc">zxc</option>
+            <option value ="vbn">vbn</option>
+        </select>
+        <button onclick="func()">click</button>
+    </body>
+</html>

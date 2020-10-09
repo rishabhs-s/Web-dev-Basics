@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>
+            time functions
+        </title>
+        <script>
+            var id=0;
+            var id1=0;
+            var sec=0;
+            function printmsg(){
+                document.getElementById("h1").innerHTML="5 sec passed";
+
+            }
+            function start(){
+               id= window.setTimeout(printmsg,5000);
+                
+            }
+            function stop(){
+                window.clearTimeout(id);
+            }
+
+                function printmsg1(){
+                    document.getElementById("h11").innerHTML=sec+"seconds";
+                    sec++;
+    
+                }
+                function start1(){
+                   id1= window.setInterval(printmsg1,1000);
+                    
+                }
+                function stop1(){
+                    window.clearInterval(id1);
+
+            }
+
+        </script>
+    </head>
+    <body>
+        <button onclick="start()" id="start">start</button>
+        <h1 id="h1">time</h1>
+        <button onclick="stop()" id="stop">stop</button><br>
+        <h1>stopwatch</h1><br>
+        <button onclick="start1()" id="start">start</button>
+        <h1 id="h11">time</h1>
+        <button onclick="stop1()" id="stop">stop</button>
+    </body>
+</html>

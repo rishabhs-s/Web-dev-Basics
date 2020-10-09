@@ -1,0 +1,27 @@
+<!-- class name is used when we have to select different tags like <p>and<a>or any other tags but tag name is used when we have select all tag of a partiular type only -->
+<html>
+    <head>
+        <title>
+            get by classname
+        </title>
+        <script>
+            function changestyle(){
+                var ele=document.getElementsByClassName("para");
+                for(var i=0;i<5;i++)
+                {
+                    ele[i].style.color="red";
+                }
+
+            }
+
+        </script>
+
+    </head>
+    <body>
+        <p id="p1" class="para">a pargraph(para class)</p>
+        <p id="p3" class="para1">a pargraph(para1 class)</p>
+             <p id="p1" class="para">a pargraph(para class)</p><p id="p2" class="para">a paragraph(para class)</p>
+        <a href="www.google.com" class ="para">a link(para class)</a><br><hr>
+        <button onclick="changestyle()">click</button>
+    </body>
+</html>

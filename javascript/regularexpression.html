@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            Regular Expressions
+        </title>
+        <Script>
+            function validate(){
+                var username=document.getElementById("username").value;
+                var regx= /E00/;
+                // or can be made by --->regx=new RegExp("E00")
+                if (regx.test(username))
+                {
+                    alert("valid username");
+                }
+                else
+                {
+                    alert("invalid username");
+                    document.getElementById("label").style.visibility="visible";
+                }
+            }
+
+        </Script>
+    </head>
+    <input type="text" id="username" placeholder="username" ><br>
+    <label id ="label" style="color:red ;visibility:hidden;">invalid username</label><br>
+    <button onclick="validate();">submit</button>
+
+</html>

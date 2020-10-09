@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+         Reg Exp    
+        </title>
+        <script>
+            function validate(){
+                var mobi=document.getElementById("mobi").value;
+                var regx =/^[6-9][0-9]{9}$/;//or/[6-9]\d{9}/
+                if(regx.test(mobi))
+                {
+                    alert("mobile number verified");
+                }
+                else{
+                    alert("check mob number");
+                }
+            }
+
+
+        </script>
+    </head>
+    <body>
+        <input id="mobi" placeholder="mobile number"><br><br>
+        <button id="btn" onclick="validate();">Submit</button>
+
+    </body>
+
+</html>

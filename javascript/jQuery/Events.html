@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>
+            Events
+        </title>
+        <link rel="stylesheet" href="events.css">
+    </head>
+    <body>
+        <h1>Heading 1</h1>
+        <div id="divone" class="div">
+            <p>Div one P1</p>
+            <p>Div one P2</p>
+            <p>Div one P3</p>
+
+        </div>
+        <div id="divtwo" class="div">
+            <p>Div two P1</p>
+            <p>Div two P2</p>
+            <p>Div two P3</p>
+
+        </div>
+        <div id="divthree"class="div">
+            <p>Div three P1</p>
+            <p>Div three P2</p>
+            <p>Div three P3</p>
+
+        </div>
+        <button id="btn">submit</button>
+    </body>
+    <script src="jquery.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function(){//execute when whole document is laoded
+            $("button").click(func)
+        function func(){
+            $("#divthree").fadeToggle();
+
+        }
+
+        }
+        )
+        
+    </script>
+
+</html>

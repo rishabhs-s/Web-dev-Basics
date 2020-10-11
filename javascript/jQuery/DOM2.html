@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>
+            DOM Manipulation
+        </title>
+        <link rel="stylesheet" href="dom2.css">
+
+    </head>
+    <body>
+        <h1>DOM Manipulations</h1>
+        <button id="btn1">append</button>
+        <button id="btn2">after</button>
+        <button id="btn3">prepend</button>
+        <button id="btn4">before</button>
+        <button id="btn5">remove</button>
+        <button id="btn6">empty</button>
+
+        <div id="divone">
+           <p id="p">THIS IS A PARAGRAPH</p>
+        </div>
+
+    </body>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#divone").append("this is appended inside the div");
+
+            });
+            $("#btn2").click(function(){
+                $("#divone").after("this is after the para outside the div");
+
+            });
+
+            $("#btn3").click(function(){
+                $("#divone").prepend("this is prepended para outside the div");
+
+            });
+            $("#btn4").click(function(){
+                $("#divone").before("this is before the para outside the div");
+
+            });
+            $("#btn5").click(function(){
+                $("#divone").remove("#p");
+
+            });
+            $("#btn6").click(function(){
+                $("#divone").empty("it empties the div ");
+
+            });
+
+        });
+
+    </script>
+   
+</html>

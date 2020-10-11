@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            DOM MANIPULATION
+        </title>
+        <link rel="stylesheet" href="dom3.css">
+
+    </head>
+    <body>
+        <h1>DOM MANIPULATION</h1>
+        <button id="btn1">Add Class</button>
+        <button id="btn2">Remove  Class</button>
+        <button id="btn3">Toggle Class</button>
+        <div id="div1">
+        <p> THIS IS A PARAGRAPH IN DIV</p>
+        </div>
+        <div id="div2" class="cls2">
+            <p> THIS IS A PARAGRAPH IN DIV</p>
+            </div>
+    </body>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#div1").addClass("cls1");
+
+            });
+            $("#btn2").click(function(){
+                $("#div2").removeClass("cls2")
+                
+
+            });
+
+
+        });
+    </script>
+</html>

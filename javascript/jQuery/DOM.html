@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+            DOM manipulations
+        </title>
+        <link rel="stylesheet" href="dom.css">
+    </head>
+    <body>
+        <h1>DOM manipulations</h1>
+        <button id="btn1">alert btn</button>
+        <button id="btn2">set text</button>
+        <div id="divone">
+            <p id="p1">this is a pargraph</p>
+        </div>
+        <div id="divtwo">
+            the differnce between html and text selector is that in html method we get the whole html code and in text we only get text
+        </div>
+    </body>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                alert($("#p1").text());
+            });
+            $("#btn2").click(function(){
+                $("#p1").text("set text");
+
+            });
+
+        });
+    </script>
+</html>

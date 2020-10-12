@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            tooltip
+        </title>
+        <link rel="stylesheet" href="first.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+
+    </head>
+    <body>
+        <div id="div">
+            <img id="img" src="img.png" title="image">
+        </div>
+        
+
+    </body>
+    <script src="../jquery.js"></script>
+    <script src="jqueryui/jquery-ui.js"></script>
+    <script>
+        $("#img").tooltip({
+            content:"from js"
+        });
+
+    </script>
+</html>

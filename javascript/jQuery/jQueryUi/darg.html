@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>
+            Drag the cube
+        </title>
+        <link rel="stylesheet" href="first.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+
+    </head>
+    <body>
+       <h1>Drag the cube</h1>
+       <div id="div">
+       <div class="cube">
+           <h2>cube1</h2>
+       </div>
+       <div class="cube">
+        <h2>cube2</h2>
+    </div>
+</div>
+    </body>
+    <script src="../jquery.js"></script>
+    <script src="jqueryui/jquery-ui.js"></script>
+    <script>
+        $(".cube").draggable({
+            containment:"parent",
+            cursor:"grabbing",
+            opacity:0.5
+        });
+
+    </script>
+    <style>
+        .cube{
+            border: 2px solid purple;
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            padding: 10px;
+            margin: 10px;
+        }
+        #div{
+            height:350px;
+            border: 2px solid black;
+        }
+    </style>
+</html>

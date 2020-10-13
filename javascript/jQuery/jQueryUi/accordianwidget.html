@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>
+            Accordian Widget
+        </title>
+        <h1>ACCORDIAN WIDGET CONTROL</h1>
+        <link rel="stylesheet" href="first.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+
+    </head>
+    <body>
+        <div id="div">
+            <h2>Heading1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, ipsam corporis? Quibusdam rem temporibus aut ipsam nihil similique, nesciunt cupiditate illo, dignissimos recusandae consectetur incidunt, voluptate distinctio est eaque quaerat?</p>
+            <h2>heading 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nihil fuga illum sunt quibusdam veniam voluptate quod, soluta, perferendis, assumenda similique hic expedita fugit eaque voluptas harum deserunt praesentium eos.</p>
+        </div>
+
+    </body>
+    <script src="../jquery.js"></script>
+    <script src="jqueryui/jquery-ui.js"></script>
+    <script>
+        $("#div").accordion({
+            collapsaible:true,
+            event:"mouseover",
+            animate:1000,
+            heightstyle:true
+
+        });
+    </script>
+</html>

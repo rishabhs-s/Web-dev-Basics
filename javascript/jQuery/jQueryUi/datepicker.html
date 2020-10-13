@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            jqueryui
+        </title>
+        <link rel="stylesheet" href="first.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+
+    </head>
+    <body>
+        <h1>Date Time Picker</h1>
+        <div id="divone">
+            <input id="date" type="text">
+
+        </div>
+
+    </body>
+    <script src="../jquery.js"></script>
+    <script src="jqueryui/jquery-ui.js"></script>
+    <script>
+        $("#date").datepicker({
+            numberOfMonths:1,
+            changeYear:true,
+            changeMonth:true
+        });
+
+    </script>
+</html>

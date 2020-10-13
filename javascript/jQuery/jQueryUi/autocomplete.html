@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>
+            AUTOCOMPLETE
+        </title>
+        <link rel="stylesheet" href="first.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+
+    </head>
+    <body>
+        <h1>AUTOCOMPLETE</h1>
+        <div id="div">
+            <label id="label">Enter search term</label>
+            <input id="input" type="text" name="">
+
+        </div>
+
+    </body>
+    <script src="../jquery.js"></script>
+    <script src="jqueryui/jquery-ui.js"></script>
+    <script>
+        var src=["new delhi","new york","new jersey", "pune","mumbai"];
+        $("#input").autocomplete({
+            source:src
+        },{
+            autoFocus:true,
+            minLength:3
+        });
+    </script>
+    <style>
+        #div{
+            border: 2px solid purple;
+            padding:15px;
+            margin: 10px;
+        }
+    </style>
+</html>

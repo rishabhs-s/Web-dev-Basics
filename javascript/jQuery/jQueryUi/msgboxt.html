@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>
+            Message box
+        </title>
+        <link rel="stylesheet" href="first.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+
+    </head>
+    <body>
+        <h1>Message Box</h1>
+        <div id="divone">THIS IS DIV ONE
+
+            <br><button id="btn">okay</button>
+        </div>
+        <div id="msgbox">THIS IS MSG BOX</div>
+        
+
+    </body>
+    <script src="../jquery.js"></script>
+    <script src="jqueryui/jquery-ui.js"></script>
+    <script> 
+        $("btn").click(function(){
+            $("#msgbox").dialog({
+                title: "message box"
+            });
+
+        });
+            
+    </script>
+    <style>
+        #divone{
+            border: 2px solid blue;
+            padding: 10px;
+            margin: 10px;
+        }
+        #btn{
+            margin: 10px;
+        }
+    </style>
+</html>

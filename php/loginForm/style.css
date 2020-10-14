@@ -1,0 +1,29 @@
+#div{
+    background-color: rgb(71, 179, 168);
+    border: 2px solid black;
+    margin: auto;
+    width: 75%;
+    padding: 10px;
+}
+ #div h1{
+     text-align: center;
+ }
+
+ #div h3{
+     text-align: center;
+     
+ }
+
+ input{
+     width: 60%;
+     margin: 5px auto;
+     padding: 10px;
+     border: 2px solid;
+     display: block;
+ }
+ button{
+     margin:5px;
+     display: block;
+     margin: 5px auto;
+
+ }

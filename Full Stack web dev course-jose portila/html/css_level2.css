@@ -1,0 +1,31 @@
+#font{
+    font-family: 'Syne Tactile', cursive;
+    text-align: center;
+}
+td{
+    height: 300px;
+    width: 150px;
+    background-color:black;
+    border: 5px solid white;
+}
+#one{
+    background-color: #8E3B46;
+}
+
+#two{
+    background-color: #E1DD8F;
+}
+#three{
+    background-color: #E0777D;
+}
+#four{
+    background-color:#967F93 ;
+}
+#five{
+    background-color: #477890 ;
+}
+.all{
+  margin: auto;
+  padding-left: 5px;
+  
+}
